@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DL Barcode Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>PDF417 Driver's License Barcode Generator</h1>
+
+  <form id="dlForm">
+    <label for="stateSelector">Select State:</label>
+    <select id="stateSelector">
+      <option value="NM">New Mexico</option>
+      <option value="CO">Colorado</option>
+    </select>
+
+    <div id="formFields"></div>
+
+    <button type="button" id="generateSampleBtn">Generate Sample License</button>
+    <button type="submit">Generate Barcode</button>
+  </form>
+
+  <div id="barcodeOutput">
+    <h2>Barcode Preview</h2>
+    <div id="barcodeImageContainer"></div>
+    <a id="downloadLink" download="barcode.png">Download PNG</a>
+  </div>
+
+  <div id="exportPayload">
+    <h2>ANSI Payload</h2>
+    <textarea id="payloadOutput" rows="10" cols="80" readonly></textarea>
+    <br />
+    <button id="copyPayloadBtn">Copy to Clipboard</button>
+  </div>
+
+  <div id="auditOverlay">
+    <h2>Audit Overlay</h2>
+    <ul id="auditList"></ul>
+  </div>
+
+  <!-- ✅ Load logic in correct order -->
+  <script src="states/index.js"></script>
+  <script src="generators.js"></script>
+  <script src="states/nm.js"></script>
+  <script src="states/co.js"></script>
+  <script src="app.core.js"></script>
+  <script src="app.ui.js"></script>
+</body>
+</html>

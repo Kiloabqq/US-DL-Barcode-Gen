@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2em;
+  background-image: url('motherb.png');; /* Replace with actual image URL or path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #e0f0ff;
+}
+
+form {
+  margin-bottom: 2em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+input, select {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  width: 100%;
+  background-color: #111;
+  color: #e0f0ff;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0f4;
+  color: #000;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0c3;
+}
+
+#barcodeOutput,
+#exportPayload,
+#auditOverlay {
+  margin-top: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  background-color: #111;
+  color: #e0f0ff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+ul#auditList {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#auditList li {
+  padding: 0.25em 0;
+  border-bottom: 1px solid #333;
+}
