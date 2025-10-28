@@ -15,6 +15,12 @@ A browser-based PDF417 barcode generator for U.S. driver's licenses. Built for e
 
 This project is intended for **educational use only** — to explore barcode generation, form workflows, and modular data structures. It is **not** intended for production use, official documentation, or any form of identity replication.
 
+## 🛠️ Add Your Own State
+To add a new state:
+- Create a new file in states/ (e.g. tx.js)
+- Define DL_STATES["TX"] with defaults and generateICN()
+- Add <option value="TX">Texas</option> to the dropdown in index.html
+
 ## 📦 Setup
 
 Clone the repo and open `index.html` in your browser:
@@ -23,9 +29,5 @@ Clone the repo and open `index.html` in your browser:
 git clone https://github.com/Neo/barcodegen.git
 cd barcodegen
 
-🛠️ Add Your Own State
-To add a new state:
-- Create a new file in states/ (e.g. tx.js)
-- Define DL_STATES["TX"] with defaults and generateICN()
-- Add <option value="TX">Texas</option> to the dropdown in index.html
+
 
