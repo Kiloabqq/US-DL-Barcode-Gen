@@ -22,3 +22,10 @@ Clone the repo and open `index.html` in your browser:
 ```bash
 git clone https://github.com/Neo/barcodegen.git
 cd barcodegen
+
+🛠️ Add Your Own State
+To add a new state:
+- Create a new file in states/ (e.g. tx.js)
+- Define DL_STATES["TX"] with defaults and generateICN()
+- Add <option value="TX">Texas</option> to the dropdown in index.html
+
