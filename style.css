@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   padding: 2em;
-  background-image: url('motherb.png');; /* Replace with actual image URL or path */
+  background-image: url('https://freeimage.host/i/flower.KQdjPMg');; /* Replace with actual image URL or path */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -65,4 +65,5 @@ ul#auditList {
 ul#auditList li {
   padding: 0.25em 0;
   border-bottom: 1px solid #333;
+
 }
